@@ -1,4 +1,4 @@
 [.zprezto]
 checkout = git clone --recursive 'https://github.com/sorin-ionescu/prezto.git' '.zprezto'
-update = git pull --ff-only --recurse-submodules
+update = git pull --ff-only && git submodule update --init --recursive
 push = :
