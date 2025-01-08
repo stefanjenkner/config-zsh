@@ -1,0 +1,34 @@
+[.zcomet/bin]
+checkout = git clone 'https://github.com/agkozak/zcomet.git' '.zcomet/bin'
+update = git pull --ff-only
+push = :
+
+[.zcomet/repos/agkozak/agkozak-zsh-prompt]
+checkout = git clone 'https://github.com/agkozak/agkozak-zsh-prompt' 'agkozak-zsh-prompt'
+update = git pull --ff-only
+push = :
+
+[.zcomet/repos/agkozak/zhooks]
+checkout = git clone 'https://github.com/agkozak/zhooks' 'zhooks'
+update = git pull --ff-only
+push = :
+
+[.zcomet/repos/agkozak/zsh-z]
+checkout = git clone 'https://github.com/agkozak/zsh-z' 'zsh-z'
+update = git pull --ff-only
+push = :
+
+[.zcomet/repos/ohmyzsh/ohmyzsh]
+checkout = git clone 'https://github.com/ohmyzsh/ohmyzsh' 'ohmyzsh'
+update = git pull --ff-only
+push = :
+
+[.zcomet/repos/zsh-users/zsh-autosuggestions]
+checkout = git clone 'https://github.com/zsh-users/zsh-autosuggestions' 'zsh-autosuggestions'
+update = git pull --ff-only
+push = :
+
+[.zcomet/repos/zsh-users/zsh-syntax-highlighting]
+checkout = git clone 'https://github.com/zsh-users/zsh-syntax-highlighting' 'zsh-syntax-highlighting'
+update = git pull --ff-only
+push = :
