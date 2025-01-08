@@ -32,6 +32,16 @@ bindkey -M isearch '^E' accept-search
 bindkey '^A' beginning-of-line
 bindkey '^E' end-of-line
 
+# History
+setopt EXTENDED_HISTORY
+setopt SHARE_HISTORY
+setopt HIST_IGNORE_DUPS
+setopt HIST_FIND_NO_DUPS
+setopt HIST_SAVE_NO_DUPS
+setopt HIST_VERIFY
+HISTSIZE=10000
+SAVEHIST=10000
+
 # https://github.com/agkozak/agkozak-zsh-prompt?tab=readme-ov-file#custom-prompt-character
 AGKOZAK_PROMPT_CHAR=( ❯ ❯ ❮ )
 
