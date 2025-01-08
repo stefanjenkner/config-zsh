@@ -23,15 +23,24 @@ zcomet load zsh-users/zsh-autosuggestions
 # Run compinit and compile its cache
 zcomet compinit
 
-# built-in zsh correction and menu-style selection for completion
+# Use built-in zsh correction and menu-style selection for completion
 setopt CORRECT_ALL
 zstyle ':completion:*' menu select
 
-# colored directory listings
+# Enable colored directory listings
 alias ls='ls --color=auto'
 export CLICOLOR=1
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+
+# Enable Emacs-style key bindings
+bindkey '^R' history-incremental-search-backward
+bindkey -M isearch '^E' accept-search
+bindkey '^A' beginning-of-line
+bindkey '^E' end-of-line
+
+# https://github.com/agkozak/agkozak-zsh-prompt?tab=readme-ov-file#custom-prompt-character
+AGKOZAK_PROMPT_CHAR=( ❯ ❯ ❮ )
 
 # Set up various version managers
 
@@ -57,3 +66,4 @@ if [ -d $GOENV_ROOT/bin ] ; then
   export PATH="$GOROOT/bin:$PATH"
   export PATH="$PATH:$GOPATH/bin"
 fi
+

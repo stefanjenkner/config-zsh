@@ -1,5 +1,5 @@
 [.zcomet/bin]
-checkout = git clone 'https://github.com/agkozak/zcomet.git' '.zcomet/bin'
+checkout = git clone 'https://github.com/agkozak/zcomet.git' 'bin'
 update = git pull --ff-only
 push = :
 
