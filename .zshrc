@@ -16,13 +16,6 @@ zcomet load ohmyzsh plugins/gitfast
 # Lazy-load plugins
 zcomet trigger zhooks agkozak/zhooks
 
-# Load these popular plugins last
-zcomet load zsh-users/zsh-syntax-highlighting
-zcomet load zsh-users/zsh-autosuggestions
-
-# Run compinit and compile its cache
-zcomet compinit
-
 # Use built-in zsh correction and menu-style selection for completion
 setopt CORRECT_ALL
 zstyle ':completion:*' menu select
@@ -67,3 +60,11 @@ if [ -d $GOENV_ROOT/bin ] ; then
   export PATH="$PATH:$GOPATH/bin"
 fi
 
+# Load these popular plugins last
+zcomet load zsh-users/zsh-syntax-highlighting
+# https://github.com/zsh-users/zsh-autosuggestions?tab=readme-ov-file#disabling-automatic-widget-re-binding
+#ZSH_AUTOSUGGEST_MANUAL_REBIND=1
+#zcomet load zsh-users/zsh-autosuggestions
+
+# Run compinit and compile its cache
+zcomet compinit
