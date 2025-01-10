@@ -73,8 +73,8 @@ fi
 # Load these popular plugins last
 zcomet load zsh-users/zsh-syntax-highlighting
 # https://github.com/zsh-users/zsh-autosuggestions?tab=readme-ov-file#disabling-automatic-widget-re-binding
-#ZSH_AUTOSUGGEST_MANUAL_REBIND=1
-#zcomet load zsh-users/zsh-autosuggestions
+ZSH_AUTOSUGGEST_MANUAL_REBIND=1
+zcomet load zsh-users/zsh-autosuggestions
 
 # Run compinit and compile its cache
 zcomet compinit
