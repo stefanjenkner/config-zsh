@@ -41,6 +41,7 @@ setopt HIST_SAVE_NO_DUPS
 setopt HIST_VERIFY
 HISTSIZE=10000
 SAVEHIST=10000
+HISTFILE=~/.zsh_history
 
 # https://github.com/agkozak/agkozak-zsh-prompt?tab=readme-ov-file#custom-prompt-character
 AGKOZAK_PROMPT_CHAR=( ❯ ❯ ❮ )
