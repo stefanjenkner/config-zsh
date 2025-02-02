@@ -71,6 +71,11 @@ if [ -d $GOENV_ROOT/bin ] ; then
   export PATH="$PATH:$GOPATH/bin"
 fi
 
+# tfenv
+if [ -d $HOME/.tfenv/bin ] ; then
+  export PATH="$HOME/.tfenv/bin:$PATH"
+fi
+
 # Load these popular plugins last
 zcomet load zsh-users/zsh-syntax-highlighting
 # https://github.com/zsh-users/zsh-autosuggestions?tab=readme-ov-file#disabling-automatic-widget-re-binding
