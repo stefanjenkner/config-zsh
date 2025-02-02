@@ -77,5 +77,8 @@ zcomet load zsh-users/zsh-syntax-highlighting
 ZSH_AUTOSUGGEST_MANUAL_REBIND=1
 zcomet load zsh-users/zsh-autosuggestions
 
+# Various aliases
+alias mc='LANG=en_US.UTF-8 mc'
+
 # Run compinit and compile its cache
 zcomet compinit
