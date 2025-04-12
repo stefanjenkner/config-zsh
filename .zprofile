@@ -3,6 +3,11 @@ if [ -d /opt/homebrew/bin ] ; then
   export PATH=/opt/homebrew/bin:$PATH
 fi
 
+# Rancher Desktop
+if [ -d $HOME/.rd/bin ] ; then
+  export PATH=$HOME/.rd/bin:$PATH
+fi
+
 # Ensure path arrays do not contain duplicates
 typeset -gU cdpath fpath mailpath path
 
